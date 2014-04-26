@@ -16,6 +16,10 @@ def check_answer?(answer)
   answer == current_card.answer
 end
 
-def thing
+def increment_correct_answer
+  session[:correct_answer] += 1
+end
 
+def increment_incorrect_answer
+  session[:incorrect_answer] += 1
 end

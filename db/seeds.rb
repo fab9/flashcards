@@ -1,4 +1,6 @@
-file = File.open('rubycards.txt').readlines
+d = Deck.create(name: "Ruby")
+
+file = File.open('testdeck.txt').readlines
 file.delete("\n")
 
 file.map! do |line|
@@ -6,7 +8,7 @@ file.map! do |line|
 end
 
 file.each_slice(2) do |cardface|
-  Card.create!(
+  d.cards << Card.create!(
     question: cardface[0],
     answer: cardface[1]
     )
