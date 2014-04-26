@@ -1,0 +1,23 @@
+<div class="container">
+  <%= erb :_nav %>
+  <div class="correct">
+	<%= @stat.correct_total %>
+  </div>
+  <div class="incorrect">
+	<%= @stat.incorrect_total %>
+  </div>
+  <div class="question">
+  	<h2><%= @card.question %></h2>
+  	<form>
+  		<form name="answer" action="#" method="post">
+        Answer:<br/>
+        <input type="submit" value="submit answer">
+    </form>
+  </div>
+  <div class="skip">
+  	<a href="#"></a>
+  </div>
+  <div class="quit">
+  	<a href="/deck/selection">Quit</a>
+  </div>
+</div>

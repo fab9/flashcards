@@ -1,0 +1,8 @@
+<div class="container">
+	<%= erb :_nav %>
+	<h1>Your Stats</h1>
+    <% if @rounds.length > 0 %>
+	<% @rounds.each do |round| %>
+	  <li><%= round.stats.correct_total %> - <%= round.stats.incorrect_total %></li>
+	<% end %>
+</div>

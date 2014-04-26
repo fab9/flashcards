@@ -1,0 +1,15 @@
+<div class="container">
+	<%= erb :nav_bar %>
+
+	<h1>Choose your deck</h1>
+
+	<% @decks.each do |deck| %>
+	  <form>
+	  	<input type="radio" name="<%= deck.name %>" value="<%= deck.name %>"><%= deck.name %>
+	
+	<% end %>
+	 <input type="submit" value="Start Game">
+	 </form>
+    
+
+</div>
