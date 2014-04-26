@@ -9,3 +9,5 @@ end
 def next_card
   session[:card_counter] += 1
 end
+
+
