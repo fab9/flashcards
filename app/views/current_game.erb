@@ -1,0 +1,19 @@
+<div class="container">
+  <%= erb :_nav %>
+
+  <h1>Playing game with <%= current_deck_name %> Deck</h1>
+
+  <h4>Question:</h4>
+  <p class="question"><%= current_card.question %><p>
+  <form action = "/current_game" method="post">
+    Answer?: <input type="text" name="answer" />
+    <input type="submit" value="Answer!" />
+  </form>
+  <div>
+    <a href="/current_game/action/skip">Skip Question</a>
+    <a href="/current_game/action/quit">Quit</a>
+  </div>
+  Turn: <%= session[:game_counter]%><br/>
+  Card: <%= session[:card_counter]%> of <%= Card.all.count%>
+  <%= session[:test]%>
+</div>
