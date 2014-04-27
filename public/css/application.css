@@ -1,6 +1,6 @@
-html { 
+html {
   font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
-  background: url(img/skulls.png) no-repeat center center fixed; 
+  background: url(img/skulls.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,7 +8,7 @@ html {
 }
 
 .container {
-  background: url(img/transpBlack25.png) center center fixed; 
+  background: url(img/transpBlack25.png) center center fixed;
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 40px 20px;
@@ -29,7 +29,7 @@ a:hover {
 
 a:active {
   color: black;
-} 
+}
 
 .container h1 {
   font-size: 40px;
@@ -62,8 +62,8 @@ a:active {
 }
 
 .submit {
-  padding-top: 20px; 
-  text-align: center; 
+  padding-top: 20px;
+  text-align: center;
 }
 
 #nav {
@@ -71,7 +71,7 @@ a:active {
 }
 
 #nav a {
-  text-decoration: none; 
+  text-decoration: none;
   padding-left: 10px;
 }
 
@@ -81,7 +81,7 @@ th {
 }
 
 .submit_button {
-  background: url(img/transpBlack50.png) center center fixed; 
+  background: url(img/transpBlack50.png) center center fixed;
   color: #6DBFA9;
   border: none;
   border-radius: 5px;
