@@ -1,5 +1,5 @@
 def initialize_current_deck(deck)
-  Deck.find(deck)
+  session[:game_current_deck] = Deck.find(deck)
 end
 
 def initialize_game_counter
@@ -7,13 +7,17 @@ def initialize_game_counter
 end
 
 def initialize_card_counter
-  session[:card_counter] = 1
+  session[:game_card_counter] = 1
 end
 
 def initialize_correct_answer
-  session[:correct_answer] = 0
+  session[:game_correct_answer] = 0
+end
+
+def initialize_skip_count
+  session[:game_skip_counter] = 0
 end
 
 def initialize_incorrect_answer
-  session[:incorrect_answer] = 0
+  session[:game_incorrect_answer] = 0
 end

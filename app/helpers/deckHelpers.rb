@@ -1,3 +1,3 @@
 def current_deck_name
-  session[:current_deck].name
+  session[:game_current_deck].name
 end

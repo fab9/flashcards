@@ -15,8 +15,9 @@
     <a href="/current_game/action/quit">Quit</a>
   </div>
   Turn: <%= session[:game_counter]%><br/>
-  Card: <%= session[:card_counter]%> of <%= Card.all.count %>
+  Card: <%= session[:game_card_counter]%> of <%= Card.all.count %><br/>
+  Skipped: <%= session[:game_skip_counter] %> Cards
   <br/><br/>
-  <p>Correct Answers: <%= session[:correct_answer] %></p>
-  Incorrect Answers: <%= session[:incorrect_answer] %>
+  <p>Correct Answers: <%= session[:game_correct_answer] %></p>
+  Incorrect Answers: <%= session[:game_incorrect_answer] %>
 </div>

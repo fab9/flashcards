@@ -35,6 +35,7 @@ post '/deck_selection' do
   initialize_card_counter
   initialize_correct_answer
   initialize_incorrect_answer
+  initialize_skip_count
   @cards = get_cards
   redirect to ("/current_game")
 end
