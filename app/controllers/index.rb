@@ -25,7 +25,7 @@ get '/create_account' do
 end
 
 post '/create_account' do
-  User.create(username: params[:username], password: params[:password])
+  User.create(username: params[:username], password: params[:password], round_count: 1)
   redirect '/'
 end
 

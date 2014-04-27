@@ -29,4 +29,7 @@ end
 get "/game_over" do
   create_user_stats
   delete_game_session
+  @stats = user_stats(current_user.round_count)
+  current_user.update_attributes(round_count: current_user.round_count += 1)
+  erb :game_over
 end

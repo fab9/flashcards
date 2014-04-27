@@ -21,3 +21,12 @@ end
 def initialize_incorrect_answer
   session[:game_incorrect_answer] = 0
 end
+
+def delete_game_session
+  session.delete(:game_incorrect_answer)
+  session.delete(:game_correct_answer)
+  session.delete(:game_skip_counter)
+  session.delete(:game_card_counter)
+  session.delete(:game_counter)
+  session.delete(:game_current_deck)
+end

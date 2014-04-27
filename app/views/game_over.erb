@@ -2,12 +2,15 @@
 	<%= erb :_nav %>
 	<h1>Game Over</h1>
   <div class="correct_total">
-	<%= @stat.correct_total %><p>correct answers</p>
+	<%= @stats.correct_total %><p>correct answers</p>
   </div>
   <div class="incorrect_total">
-	<%= @stat.incorrect_total %><p>incorrect answers</p>
+	<%= @stats.incorrect_total %><p>incorrect answers</p>
+  </div>
+  <div class="skip_total">
+  <p>Total skips: <%= @stats.skip_total %></p>
   </div>
   <div class="new_game">
-  	<a href="/deck/selection">New Game</a>
+  	<a href="/dashboard">New Game</a>
   </div>
 
