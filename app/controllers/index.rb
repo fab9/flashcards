@@ -30,12 +30,12 @@ post '/create_account' do
 end
 
 post '/deck_selection' do
-  @cards = get_cards(params[:deck])
-  session[:current_deck] = Deck.find(params[:deck])
+  initialize_current_deck(params[:deck])
   initialize_game_counter
   initialize_card_counter
   initialize_correct_answer
   initialize_incorrect_answer
+  @cards = get_cards
   redirect to ("/current_game")
 end
 

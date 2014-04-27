@@ -5,6 +5,7 @@ get "/current_game" do
 end
 
 post "/current_game" do
+  redirect to ("/current_game/stat") if game_over?
   increment_game_counter
   @answer = check_answer?(params[:answer])
   if @answer
@@ -20,4 +21,5 @@ end
 get "/current_game/action/:action" do
   increment_game_counter
   check_action(params[:action])
+  redirect to ("/current_game")
 end
