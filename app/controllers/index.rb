@@ -39,7 +39,7 @@ post '/deck_selection' do
   redirect to ("/current_game")
 end
 
-get '/logout' do
+get '/log_out' do
   session.delete(:user_id)
   redirect '/'
 end

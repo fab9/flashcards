@@ -11,7 +11,7 @@ html {
   background: url(img/transpBlack25.png) center center fixed; 
   margin: 20px auto;
   width: 600px;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 40px 20px;
   border: 1px dotted black;
 }
 
@@ -31,17 +31,17 @@ a:active {
   color: black;
 } 
 
-#sign_in h1 {
+.container h1 {
   font-size: 40px;
   text-align: center;
 }
 
-#create h2 {
+.container h2 {
   font-size: 30px;
   text-align: center;
 }
 
-#password {
+.password {
   text-align: center;
   padding: 10px 0px;
 }
@@ -50,12 +50,18 @@ a:active {
   margin-top: 20px;
 }
 
-#username {
+#sign_in a{
+  text-decoration: none;
+  text-align: center;
+  padding-left: 225px;
+}
+
+.username {
   text-align: center;
   padding: 10px 0px;
 }
 
-#submit {
+.submit {
   padding-top: 20px; 
   text-align: center; 
 }
@@ -66,10 +72,6 @@ th {
   text-align: left;
 }
 
-#create a{
-  text-decoration: none;
 
-  text-align: center;
-}
 
 
