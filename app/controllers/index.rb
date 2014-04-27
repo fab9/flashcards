@@ -25,7 +25,7 @@ get '/create_account' do
 end
 
 post '/create_account' do
-  User.create(username: params[:username], password: params[:password])
+  User.create(username: params[:username], password: params[:password], round_count: 1)
   redirect '/'
 end
 
@@ -35,6 +35,7 @@ post '/deck_selection' do
   initialize_card_counter
   initialize_correct_answer
   initialize_incorrect_answer
+  initialize_skip_count
   @cards = get_cards
   redirect to ("/current_game")
 end

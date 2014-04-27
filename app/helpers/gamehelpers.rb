@@ -6,6 +6,7 @@ def check_action(action)
   case action
     when "skip"
       next_card
+      session[:game_skip_counter] += 1
     when "quit"
       redirect to ("/dashboard")
   end
@@ -20,9 +21,9 @@ def game_over?
 end
 
 def increment_correct_answer
-  session[:correct_answer] += 1
+  session[:game_correct_answer] += 1
 end
 
 def increment_incorrect_answer
-  session[:incorrect_answer] += 1
+  session[:game_incorrect_answer] += 1
 end
