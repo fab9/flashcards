@@ -66,12 +66,26 @@ a:active {
   text-align: center; 
 }
 
+#nav {
+  margin-top: 10px;
+}
+
+#nav a {
+  text-decoration: none; 
+  padding-left: 10px;
+}
 
 
 th {
   text-align: left;
 }
 
+.submit_button {
+  background: url(img/transpBlack50.png) center center fixed; 
+  color: #6DBFA9;
+  border: none;
+  border-radius: 5px;
+}
 
 
 
