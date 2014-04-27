@@ -1,9 +1,75 @@
+html { 
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  background: url(img/skulls.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .container {
+  background: url(img/transpBlack25.png) center center fixed; 
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color:#21272A;
+}
+
+a:hover {
+  color:#4E5C63;
+}
+
+a:active {
+  color: black;
+} 
+
+#sign_in h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#create h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#password {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#sign_in input {
+  margin-top: 20px;
+}
+
+#username {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#submit {
+  padding-top: 20px; 
+  text-align: center; 
+}
+
+
+
 th {
   text-align: left;
 }
+
+#create a{
+  text-decoration: none;
+
+  text-align: center;
+}
+
+
