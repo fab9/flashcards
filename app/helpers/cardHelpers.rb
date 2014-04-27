@@ -3,7 +3,7 @@ def get_cards
 end
 
 def current_card
-  get_cards[ session[:card_counter] ]
+  get_cards[ session[:card_counter] - 1 ]
 end
 
 def next_card

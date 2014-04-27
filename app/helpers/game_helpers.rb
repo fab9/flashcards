@@ -16,7 +16,7 @@ def check_answer?(answer)
 end
 
 def game_over?
-  session[:current_card] > get_cards.length
+  current_card == nil #session[:current_card] > get_cards.length
 end
 
 def increment_correct_answer
