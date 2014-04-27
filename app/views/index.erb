@@ -1,10 +1,20 @@
 <div class="container">
-  <h2>Login</h2>
-  <form action='#' method="post">
-    Username: <br/>
-    <input type="text" name="username" value="<%= @user.username %>" />
-    Password: <br/>
-    <input type="text" name="password" value="<%= @user.password %>" />
-    <input type="submit" name="Log In">
-  </form>
+  <div id="sign_in">
+    <h1>Sign in</h1>
+    <form method="post" action="/">
+      <div class="username">
+        <label>username</label></br>
+        <input type="text" name="username">
+      </div>
+      <div class="password">
+        <label>password</label></br>
+        <input type="password" name="password">
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" class="submit_button">
+      </div>
+        <h2>or</h2>
+        <a href="/create_account">Create Account</a>
+    </form>
+  </div>
 </div>

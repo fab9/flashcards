@@ -1,3 +1,7 @@
+def initialize_current_deck(deck)
+  Deck.find(deck)
+end
+
 def initialize_game_counter
   session[:game_counter] = 1
 end

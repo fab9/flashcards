@@ -1,9 +1,9 @@
-def get_cards(deck_id)
-  Card.where(deck_id: deck_id)
+def get_cards
+  Card.where(deck_id: session[:current_deck].id)
 end
 
 def current_card
-  Card.find(session[:card_counter])
+  get_cards[ session[:card_counter] - 1 ]
 end
 
 def next_card
