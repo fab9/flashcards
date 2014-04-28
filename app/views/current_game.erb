@@ -1,14 +1,15 @@
 <div class="container">
-  <h1>Playing game with <%= current_deck_name %> Deck</h1>
+  <h1>Playing game with <%= current_deck_name %> deck</h1>
 
-  <h4>Question:</h4>
   <% if @wrong_answer %>
     <p><%= @wrong_answer %></p>
   <% end %>
   <p class="question"><%= current_card.question %><p>
   <form action = "/current_game" method="post">
-    Answer?: <input type="text" name="answer" />
-    <input type="submit" value="Answer!" class="submit_button" />
+  <input type="text" name="answer" />
+  <div class="submit">
+    <input type="submit" value="Answer!" />
+  </div>
   </form>
   <div>
     <a href="/current_game/action/skip">Skip Question</a>
