@@ -1,6 +1,6 @@
-<h1>Playing game with <%= current_deck_name %> deck</h1>
+<h1 id= "inner-heading">Playing game with <%= current_deck_name %> deck</h1>
 
-<div class="container">
+<div class="container current-game">
   <div id="inner-wrapper">
   <% if @wrong_answer %>
     <p id="wrong" class="blink"><%= @wrong_answer %></p>
