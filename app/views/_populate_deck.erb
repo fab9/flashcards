@@ -1,5 +1,10 @@
 <% @decks.each do |deck| %>
-      <input type="radio" name="deck" value="<%= deck.id %>"><%= deck.name %>
+  <ul>
+    <li>
+  <input type="radio" name="deck" value="<%= deck.id %>"><%= deck.name %>
+    </li>
+  </ul>
 <% end %>
-<br/>
-<input type="submit" value="Start Game" class="submit_button">
+  <div class="submit">
+    <input type="submit" value="Start Game">
+  </div>

@@ -1,3 +1,19 @@
+a:link {
+  color: black;
+}
+
+a:visited {
+  color:#21272A;
+}
+
+a:hover {
+  color:#4E5C63;
+}
+
+a:active {
+  color: black;
+}
+
 body {
   font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
   background: url(img/skulls.png) no-repeat center center fixed;
@@ -16,22 +32,6 @@ body {
   border-radius: 3px;
 }
 
-a:link {
-  color: black;
-}
-
-a:visited {
-  color:#21272A;
-}
-
-a:hover {
-  color:#4E5C63;
-}
-
-a:active {
-  color: black;
-}
-
 .container h1 {
   font-size: 40px;
   text-align: center;
@@ -40,6 +40,14 @@ a:active {
 .container h2 {
   font-size: 30px;
   text-align: center;
+}
+
+
+
+/* Forms --------------- */
+.form ul {
+  list-style-type: none;
+  background-color: transparent;
 }
 
 .password {
@@ -79,10 +87,9 @@ a:active {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-
-
-
 }
+
+/* Nav --------------- */
 
 #nav {
   margin-top: 10px;
@@ -91,6 +98,12 @@ a:active {
 #nav a {
   text-decoration: none;
   padding-left: 10px;
+  letter-spacing: 1px;
+  text-align: left;
+  display: inline-block;
+  line-height: 16px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 
