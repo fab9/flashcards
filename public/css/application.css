@@ -15,26 +15,42 @@ a:active {
 }
 
 body {
-  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-family: "Rockwell Bold", monospace;
   background: url(img/skulls.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   line-height: 1.6em;
+  letter-spacing: 1px;
+  color: #444;
 }
 
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#wrapper h1 {
+  text-align: center !important;
+  color: #3b414e;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#inner-wrapper {
+  padding: 20px;
+}
 .container {
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,.8);
   margin: 20px auto;
-  width: 600px;
+  width: 700px;
   padding: 0px 20px 40px 20px;
   border: 1px solid black;
   border-radius: 3px;
-}
-
-.container h1 {
-  text-align: center;
+  color: #f4f4f4;
 }
 
 .container h2 {
@@ -55,8 +71,8 @@ body {
   text-align: left;
   display: inline-block;
   line-height: 16px;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 
@@ -81,14 +97,22 @@ body {
   padding-left: 225px;
 }
 
+#sign_in h1, #create_account h1 {
+  color: white;
+}
+
 .username {
   text-align: center;
   padding: 10px 0px;
 }
 
+.question {
+  font-size: 150%;
+}
+
 input {
   line-height: 1em;
-  padding: 1em 1.1em;
+  padding: .5em 1.1em;
   border-radius: 0.25em;
 }
 
@@ -99,25 +123,137 @@ input {
   text-shadow: 0 2px 0 rgba(0,0,0,0.2);
   color: #6DBFA9;
   border-radius: 3px;
-  border: solid 1px rgba(0,0,0,.6);
+  border: solid 2px rgba(0,0,0,.6);
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
   padding: 10px 15px;
   display: block;
   margin: auto;
+  margin-bottom: 25px;
   -webkit-transition: background 0.2s;
   background 0.2s;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  float: right;
 }
 
-
+submit input a:hover {
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
 
 th {
   text-align: left;
 }
 
+#options a {
+  margin: 0 auto;
+  color: #6AB8E0;
+  font-weight: 100;
+  margin-right: 40px;
+  margin-left: 40px;
+  }
 
+/* Counters --------------- */
+#counters {
+  padding: 20px;
+}
 
+#counters span {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.2);
+  box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.2);
+  color: #fff;
+  height: 24px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  padding-top: 8px;
+  position: relative;
+}
 
+#incorrect-count {
+  background-color: #a70f13;
+  padding: 10px 15px;
+}
 
+#correct-count {
+  background-color: #89b908;
+  padding: 10px 15px;
+}
+
+/* Misc ------------------ */
+.clear {
+clear: both;
+}
+
+#wrong {
+  font-size: 3em;
+  color: #a70f13;
+}
+
+/* @group Blink */
+
+.blink {
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/* @end */
+
+.misc-stats {
+  color: #9ea3a2;
+  font-size: .85em;
+  line-height: 1.3em;
+
+}
+
+.secondary-font {
+  font-family: 'Open Sans', 'sans-serif';
+
+}
+
+.align-right {
+  float: right;
+}
+
+.align-left {
+  float: left;
+}
