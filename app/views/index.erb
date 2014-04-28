@@ -1,20 +1,25 @@
 <div class="container">
   <div id="sign_in">
     <h1>Sign in</h1>
-    <form method="post" action="/">
-      <div class="username">
-        <label>username</label></br>
-        <input type="text" name="username">
-      </div>
-      <div class="password">
-        <label>password</label></br>
-        <input type="password" name="password">
-      </div>
-      <div class="submit">
-        <input type="submit" value="Submit" class="submit_button">
-      </div>
-        <h2>or</h2>
-        <a href="/create_account">Create Account</a>
-    </form>
+    <div class="form">
+
+      <form method="post" action="/">
+        <div class="username">
+          <label for="username">Username</label></br>
+          <input type="text" name="username">
+        </div>
+        <div class="password">
+          <label>Password</label></br>
+          <input type="password" name="password">
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Submit">
+        </div>
+
+          <a class="new-account" href="/create_account">Create Account</a>
+      </form>
+
+    </div>
   </div>
 </div>

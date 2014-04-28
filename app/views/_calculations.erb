@@ -1,6 +1,6 @@
 <div>
-Total Correct: <%= Stat.where(user_id: current_user.id).pluck(:correct_total).compact!.reduce(:+) %><br/>
-Total Incorrect: <%= Stat.where(user_id: current_user.id).pluck(:incorrect_total).compact!.reduce(:+) %><br/>
-Total Skipped: <%= Stat.where(user_id: current_user.id).pluck(:skip_total).compact!.reduce(:+) %>
+Total Correct: <%= Stat.where(user_id: current_user.id).pluck(:correct_total).reduce(:+) %><br/>
+Total Incorrect: <%= Stat.where(user_id: current_user.id).pluck(:incorrect_total).reduce(:+) %><br/>
+Total Skipped: <%= Stat.where(user_id: current_user.id).pluck(:skip_total).reduce(:+) %>
 </div>
 

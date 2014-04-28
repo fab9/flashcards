@@ -1,23 +1,34 @@
-<div class="container">
-  <h1>Playing game with <%= current_deck_name %> Deck</h1>
+<h1 id= "inner-heading">Playing game with <%= current_deck_name %> deck</h1>
 
-  <h4>Question:</h4>
+<div class="container current-game">
+  <div id="inner-wrapper">
   <% if @wrong_answer %>
-    <p><%= @wrong_answer %></p>
+    <p id="wrong" class="blink"><%= @wrong_answer %></p>
   <% end %>
   <p class="question"><%= current_card.question %><p>
   <form action = "/current_game" method="post">
-    Answer?: <input type="text" name="answer" />
-    <input type="submit" value="Answer!" class="submit_button" />
+  <input type="text" name="answer" />
+  <div class="submit">
+    <input type="submit" value="Answer!" />
+  </div>
+  <div class="clear"></div>
   </form>
-  <div>
-    <a href="/current_game/action/skip">Skip Question</a>
+  <div id="options" class="secondary-font">
+    <a class="align-right" href="/current_game/action/skip">Skip Question</a>
     <a href="/current_game/action/quit">Quit</a>
   </div>
+
+  <div id="counters">
+    Correct Answers:
+    <span id="correct-count"><%= session[:game_correct_answer] %></span>
+    Incorrect Answers:
+    <span id="incorrect-count"><%= session[:game_incorrect_answer] %></span>
+  </div>
+
+  <div class="misc-stats secondary-font" >
   Turn: <%= session[:game_counter]%><br/>
   Card: <%= session[:game_card_counter]%> of <%= Card.all.count %><br/>
   Skipped: <%= session[:game_skip_counter] %> Cards
-  <br/><br/>
-  <p>Correct Answers: <%= session[:game_correct_answer] %></p>
-  Incorrect Answers: <%= session[:game_incorrect_answer] %>
+  </div>
+  </div>
 </div>
